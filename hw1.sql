@@ -44,7 +44,7 @@ SELECT *
   FROM salephones
   WHERE manufacturer = 'Samsung';
 
--- 4.*	С помощью SELECT-запроса с оператором LIKE найти:
+-- 4.*	С помощью SELECT-запроса с оператором LIKE/REGEXP найти:
 -- 4.1.* Товары, в которых есть упоминание "Iphone"
 
 SELECT 	*
@@ -68,3 +68,7 @@ SELECT 	*
 SELECT 	*
   FROM salephones
  WHERE product_name LIKE '%8%';
+ 
+SELECT 	*
+  FROM salephones
+ WHERE product_name REGEXP '[8]';
